@@ -1,0 +1,15 @@
+diff --git a/node_modules/react-devtools-core/dist/backend.js b/node_modules/react-devtools-core/dist/backend.js
+index b17dd1c..33d5a5e 100644
+--- a/node_modules/react-devtools-core/dist/backend.js
++++ b/node_modules/react-devtools-core/dist/backend.js
+@@ -14579,10 +14579,6 @@ function hook_arrayLikeToArray(arr, len) { if (len == null || len > arr.length)
+  * 
+  */
+ function installHook(target) {
+-  if (target.hasOwnProperty('__REACT_DEVTOOLS_GLOBAL_HOOK__')) {
+-    return null;
+-  }
+-
+   var targetConsole = console;
+   var targetConsoleMethods = {};
+ 

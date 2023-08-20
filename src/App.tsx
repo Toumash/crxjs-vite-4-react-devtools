@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import "./App.css";
 
-const getURL = chrome.runtime.getURL ?? ((path: string) => path)
+const getURL = chrome.runtime.getURL ?? ((path: string) => path);
 
 const reactLogoUrl = getURL(reactLogo);
-const viteLogoUrl = getURL("/vite.svg")
+const viteLogoUrl = getURL(viteLogo);
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -33,7 +34,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
